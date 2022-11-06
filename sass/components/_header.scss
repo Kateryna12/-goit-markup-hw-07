@@ -1,0 +1,22 @@
+.header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #ECECEC;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+}
+
+.header__nav {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+
+}
+.header__logo {
+    color: $accent-color;
+}
+

@@ -1,0 +1,33 @@
+.filter__list {
+    @include list;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 50px;
+}
+
+.filter__button {
+    background-color: $secondary-background;
+    box-shadow: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    color: $title-color;
+    font-family: inherit;
+    transition: background-color $transition-function , color $transition-function, box-shadow $transition-function;
+    padding: 6px 22px;
+    min-width: 73px;
+
+    &--current {
+        background-color: $accent-background;
+        box-shadow: $box-shadow-filters;
+        color: $color-white;
+
+    }
+
+    &:hover, &:focus{
+        background-color: $accent-background;
+        color: $color-white;
+        box-shadow: $box-shadow-filters;
+    }
+}

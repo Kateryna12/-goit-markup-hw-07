@@ -1,0 +1,43 @@
+.footer {
+    background-color: $hero-background;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer__container {
+    display: flex;
+    align-items: baseline;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.footer__logo {
+    margin-bottom: 20px;
+    display: block;
+    &--accent {
+            color: $color-white;
+        }
+}
+
+.footer-socnetworks__text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $color-white;
+    margin-bottom: 20px;
+}
+
+.footer-socnetworks__list {
+    @include list;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footer-socnetworks__link {
+    @include link;
+    background-color: rgba(255, 255, 255, 0.1);
+    fill: $color-white;
+}

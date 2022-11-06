@@ -1,0 +1,36 @@
+.contacts__list {
+    @include list;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    display: flex;
+    align-items: center;
+}
+
+.contacts__item {
+    margin-right: 50px;
+}
+
+.contacts__item:last-child {
+    margin-right: 0;
+}
+
+.contacts__link {
+    @include link;
+    color: $prymary-color;
+    display: flex;
+    align-items: center;
+    transition: color $transition-function;
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+}
+
+.contacts__icon {
+    fill: currentColor;
+    align-items: center;
+    margin-right: 10px;
+}

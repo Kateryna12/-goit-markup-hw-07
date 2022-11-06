@@ -1,0 +1,48 @@
+.clients__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: $title-color;
+    margin-bottom: 50px;
+    @include center-text;
+}
+
+.clients__list {
+    @include list;
+    display: flex;
+    gap: 30px;
+}
+
+.clients__item {
+    width: calc((100% - 150px) / 6);
+}
+
+.clients__link {
+    @include link;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 92px;
+    cursor: pointer;
+    transition: border $transition-function;
+
+    &:hover,
+    &:focus {
+        border: 1px solid $accent-background;
+    }
+
+}
+
+.clients__icon {
+    fill: $icons-color;
+    transition: fill $transition-function;
+
+    .clients__link:hover &,
+    .clients__link:focus & {
+        fill: $accent-background;
+    }
+}
